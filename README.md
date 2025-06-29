@@ -44,7 +44,7 @@ All changes in `master` branch are automatically deployed to the above URL.
 gem install asciidoctor
 ```
 
-* AciiDoctor (pdf)
+* AsciiDoctor (pdf)
 
 ```bash
 gem install --pre asciidoctor-pdf
