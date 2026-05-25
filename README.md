@@ -79,3 +79,31 @@ make
 ![Generated pdf](https://cloud.githubusercontent.com/assets/624760/20028256/e127f148-a345-11e6-9871-5e40a7c73edb.png)
 
 ![Generated html](https://cloud.githubusercontent.com/assets/624760/20028253/cfd770c6-a345-11e6-8552-88904ecca9dc.png)
+
+## Duplicate File Cleaner for macOS
+
+A small utility script is included to help find and remove duplicate files in folders on your Mac.
+
+### Script
+
+- `tools/remove_duplicates_mac.py`
+
+### Usage
+
+Dry run (find duplicates only):
+
+```bash
+python3 tools/remove_duplicates_mac.py ~/Downloads
+```
+
+Remove duplicates (keeps the first file in each duplicate group):
+
+```bash
+python3 tools/remove_duplicates_mac.py ~/Downloads --delete
+```
+
+### Notes
+
+- The script compares files by size first, then confirms duplicates using SHA-256 content hashes.
+- Use dry run first to review what will be removed.
+- Always keep backups of important folders before deleting files.
